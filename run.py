@@ -23,7 +23,7 @@ print(root)
 
 class ModelCls:
     def __init__(
-        self, dim=300, device="cpu", batch_size=1024, lr=5e-3, epochs=5, max_length=400
+        self, dim=300, device="cpu", batch_size=200, lr=5e-3, epochs=5, max_length=400
     ):
         self.dim = dim
         self.device = device
@@ -101,7 +101,7 @@ class ModelCls:
         with open("metric.md", "w") as f:
             f.write("## 这是一个CML自动跑的textcnn模型，训练和评测iflytek公开数据集\n\n")
             f.write("---\n")
-            f.write("+ 训练过程\n\n")
+            f.write("+ 训练过程，训练集loss和训练集acc是训练一个epoch整个过程中收集的，所以前期比验证集指标低\n\n")
             f.write("|epoch|训练集loss|验证集loss|训练集acc|验证集acc|\n")
             f.write("|-|-|-|-|-|\n")
             for epoch, train_loss, val_loss, train_acc, val_acc in zip(
@@ -175,7 +175,7 @@ class ModelCls:
             end = time.time()
             waste_time = end - start
             waste_every_record = round(waste_time * 1000 / len(gold_labels), 3)
-            qps = round(len(gold_labels) / waste_time * 1000, 3)
+            qps = round(len(gold_labels) / waste_time, 3)
             correct = sum(
                 [1 if i == j else 0 for i, j in zip(gold_labels, pred_labels)]
             )
