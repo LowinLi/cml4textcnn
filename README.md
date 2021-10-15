@@ -1,8 +1,9 @@
 # cml4textcnn
 
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FLowinLi%2Fcml4textcnn%2Fbadge%3Fref%3Dmain&style=plastic)](https://actions-badge.atrox.dev/LowinLi/cml4textcnn/goto?ref=main)
 
-[![GHA](https://img.shields.io/github/v/tag/LowinLi/cml4textcnn?label=GitHub%20Actions&logo=GitHub)](https://github.com/LowinLi/cml4textcnn)
-
+## 标签
+**MLOPS**,**CML**,**ONNX**,**textcnn**,**CLUE**,**Continuous**
 ## 简要
 + 使用`CML`工具的一个原创例子。
 + 在github的`actions`中，训练和批测`iflytek`数据集，批测准确率`55%`，onnx加速后，单核cpu单条预测平均`2ms`

@@ -23,7 +23,7 @@ print(root)
 
 class ModelCls:
     def __init__(
-        self, dim=300, device="cpu", batch_size=212, lr=5e-3, epochs=5, max_length=400
+        self, dim=300, device="cpu", batch_size=1024, lr=5e-3, epochs=5, max_length=400
     ):
         self.dim = dim
         self.device = device
@@ -174,8 +174,8 @@ class ModelCls:
                 pred_labels.append(self.predict(record["sentence"]))
             end = time.time()
             waste_time = end - start
-            waste_every_record = round(waste_time / len(gold_labels), 3) * 1000
-            qps = round(1000 / waste_every_record, 3)
+            waste_every_record = round(waste_time * 1000 / len(gold_labels), 3)
+            qps = round(len(gold_labels) / waste_time * 1000, 3)
             correct = sum(
                 [1 if i == j else 0 for i, j in zip(gold_labels, pred_labels)]
             )
