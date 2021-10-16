@@ -99,7 +99,7 @@ class ModelCls:
             val_accs.append(round(accuracy, 3))
             val_epoch_loss_list.append(round(val_epoch_loss / batch + 1, 3))
         with open("metric.md", "w") as f:
-            f.write("## 这是一个CML自动跑的textcnn模型，训练和评测iflytek公开数据集\n\n")
+            f.write("## 这是一个CML报告，在ACTIONS中跑的textcnn模型训练和评测iflytek公开数据集\n\n")
             f.write("---\n")
             f.write("+ 训练过程，训练集loss和训练集acc是训练一个epoch整个过程中收集的，所以前期比验证集指标低\n\n")
             f.write("|epoch|训练集loss|验证集loss|训练集acc|验证集acc|\n")
