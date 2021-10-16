@@ -22,7 +22,7 @@
 
 
 ## textcnn模型
-仅使用textcnn模型，加载开源词向量sgns.merge.word中训练集出现过的词的词向量矩阵，训练和评测著名榜单[CLUE](https://github.com/CLUEbenchmark/CLUE)中的[iflytek](https://github.com/CLUEbenchmark/CLUE#3iflytek-%E9%95%BF%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-long-text-classification)数据集，验证集准确率最高至`55%`，借助ONNX加速，单核cpu单条推断平均用时仅**2-4ms**（github服务器实际可用资源可能受到高峰期影响），相比较12层以上的transformers模型，例如CLUE上github首页的`RoBERTa-wwm-ext（60.31%）`，有很高的生产落地价值。
+仅使用textcnn模型，加载开源词向量sgns.merge.word中训练集出现过的词的词向量矩阵，训练和评测著名榜单[CLUE](https://github.com/CLUEbenchmark/CLUE)中的[iflytek](https://github.com/CLUEbenchmark/CLUE#3iflytek-%E9%95%BF%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-long-text-classification)数据集，验证集准确率最高至`55%`，借助ONNX加速，单核cpu单条推断平均用时仅**2-4ms**（github服务器实际可用资源可能受到高峰期影响），相比较12层以上的transformers模型，例如CLUE上github首页的`RoBERTa-wwm-ext（60.31%）`，具有一定生产落地价值。
 
 
 ## 参考致谢
