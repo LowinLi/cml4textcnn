@@ -1,7 +1,7 @@
 # cml4textcnn
 
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FLowinLi%2Fcml4textcnn%2Fbadge%3Fref%3Dmain&style=plastic)](https://actions-badge.atrox.dev/LowinLi/cml4textcnn/goto?ref=main)
-[![License](https://img.shields.io/github/license/cicirello/jacoco-badge-generator)](https://github.com/cicirello/jacoco-badge-generator/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/LowinLi/cml4textcnn)](https://github.com/LowinLi/cml4textcnn/blob/main/LICENSE)
 
 ## 标签
 **MLOPS**,**CML**,**ONNX**,**textcnn**,**CLUE**,**Continuous**
