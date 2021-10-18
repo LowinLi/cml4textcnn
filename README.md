@@ -1,6 +1,7 @@
 # cml4textcnn
 
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FLowinLi%2Fcml4textcnn%2Fbadge%3Fref%3Dmain&style=plastic)](https://actions-badge.atrox.dev/LowinLi/cml4textcnn/goto?ref=main)
+[![License](https://img.shields.io/github/license/cicirello/jacoco-badge-generator)](https://github.com/cicirello/jacoco-badge-generator/blob/main/LICENSE)
 
 ## 标签
 **MLOPS**,**CML**,**ONNX**,**textcnn**,**CLUE**,**Continuous**
@@ -30,6 +31,6 @@
 2. [cml](https://towardsdatascience.com/what-data-scientists-need-to-know-about-devops-2f8bc6660284?gi=d43983ac072b)
 3. [cml.dev](https://cml.dev/)
 4. [onnx](https://github.com/microsoft/onnxruntime)
-5. [textcnn](https://arxiv.org/abs/1801.06287)
+5. [textcnn](http://emnlp2014.org/papers/pdf/EMNLP2014181.pdf)
 6. [word2vec](https://github.com/Embedding/Chinese-Word-Vectors)
 ---
